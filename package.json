@@ -1,0 +1,47 @@
+{
+  "name": "code-verifier-backend",
+  "version": "1.0.0",
+  "description": "This is my first project in Typescript + Swagger using Express",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch \" \"nodemon -q dist/index.js\"",
+    "test": "jest",
+    "serve:coverage" : "npm run test && cd coverage/lcov-report && npx serve"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "typescipt",
+    "swagger",
+    "mongoose"
+  ],
+  "author": "@migayalach",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.0",
+    "concurrently": "^9.1.0",
+    "eslint": "^9.15.0",
+    "globals": "^15.12.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "serve": "^14.2.4",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.16.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-node-externals": "^3.0.0",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}
